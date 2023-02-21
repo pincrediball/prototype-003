@@ -1,7 +1,8 @@
+import type { Ball } from './Ball';
 import type { IComponent } from './Components/IComponent';
 import { Playbook } from './Playbook';
 
-export class Level {
+export abstract class Level {
   id: string;
   availableComponents: IComponent[];
   playbook: Playbook = new Playbook();
@@ -10,4 +11,6 @@ export class Level {
     this.id = id;
     this.availableComponents = components || [];
   }
+
+  abstract spawnRootBall(): Ball;
 }

@@ -1,7 +1,12 @@
+import { Ball } from '../Ball';
 import { BumperCircle } from '../Components/BumperCircle';
+import { ballSize, gridSize } from '../Globals';
 import { Level } from '../Level';
 
 export class LevelA01 extends Level {
+  width = 400;
+  height = 600;
+
   constructor() {
     super('A01', [new BumperCircle(), new BumperCircle(), new BumperCircle()]);
 
@@ -14,5 +19,14 @@ export class LevelA01 extends Level {
     this.playbook.actionsPerTick.set(30, ['l-flipper']);
     this.playbook.actionsPerTick.set(31, ['r-flipper']);
     this.playbook.actionsPerTick.set(50, ['exclaim-let-it-drain']);
+  }
+
+  spawnRootBall(): Ball {
+    // prettier-ignore
+    return new Ball()
+      .atCoords(
+        this.width - ballSize - gridSize,
+        this.height - ballSize - gridSize,
+      );
   }
 }

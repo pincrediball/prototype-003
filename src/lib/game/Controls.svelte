@@ -11,7 +11,7 @@
   py-2 px-4
   bg-green-700 border border-green-800 shadow-firm
   hover:bg-green-500 hover:border-green-900
-">▶ Play</button
+">▶ Run it!</button
   >
   <button
     class="

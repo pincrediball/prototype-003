@@ -1,10 +1,15 @@
 import type { Level } from './Level';
-import type { Machine } from './Machine';
+import { Machine } from './Machine';
 import type { Playbook } from './Playbook';
 
 export class Game {
-  private level?: Level;
-  private machine?: Machine;
+  level?: Level;
+  machine: Machine = new Machine();
+
+  start(level: Level) {
+    this.level = level;
+    this.machine?.load(level);
+  }
 
   run(playbook: Playbook) {
     // TODO
