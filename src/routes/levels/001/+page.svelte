@@ -13,27 +13,29 @@
   $game.start(level);
 </script>
 
-<div class="grid grid-cols-[1fr_min-content_1fr] m-4">
-  <div class="flex flex-col gap-2">
-    <LevelHeader />
-    <LevelToolbox />
-    <div class="mt-auto flex flex-col gap-2">
-      <GameButton clazz="w-full">ℹ Buy a hint</GameButton>
-      <AnchorButton href="/menu">↗ Exit level</AnchorButton>
+<div class="m-4">
+  <LevelHeader />
+  <div class="grid grid-cols-[1fr_min-content_1fr] mt-4">
+    <div class="flex flex-col gap-2">
+      <LevelToolbox />
+      <div class="mt-auto flex flex-col gap-2">
+        <GameButton clazz="w-full">💸 Get a hint</GameButton>
+        <AnchorButton href="/menu">🏃‍♂️ Exit level</AnchorButton>
+      </div>
     </div>
-  </div>
-  <div>
-    <Machine />
-  </div>
-  <div class="flex flex-col gap-4">
-    <Playbook />
     <div>
-      <Controls />
+      <Machine />
     </div>
-    <div class="text-xl px-4 py-2 bg-neutral-600 mt-auto">
-      <p>1200 points = 🥉 bronze!</p>
-      <p>2400 points = 🥈 silver!</p>
-      <p>3500 points = 🥇 gold!</p>
+    <div class="flex flex-col gap-4">
+      <Playbook />
+      <div>
+        <Controls />
+      </div>
+      <div class="text-xl px-4 py-2 bg-neutral-600 mt-auto">
+        <p>1200 points = 🥉 bronze!</p>
+        <p>2400 points = 🥈 silver!</p>
+        <p>3500 points = 🥇 gold!</p>
+      </div>
     </div>
   </div>
 </div>

@@ -6,6 +6,7 @@ export abstract class Level {
   id: string;
   availableComponents: IComponent[];
   playbook: Playbook = new Playbook();
+  abstract readonly title: string;
 
   constructor(id: string, components: IComponent[]) {
     this.id = id;

@@ -1,5 +1,4 @@
-<div class="flex flex-col gap-1 my-4">
-  <h3 class="font-bold text-xl">Tools</h3>
+<div class="flex flex-col gap-1">
   <div
     class="border-2 border-black bg-neutral-500 shadow-firm min-h-[300px] p-1 flex flex-col gap-1"
   >

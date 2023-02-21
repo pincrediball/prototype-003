@@ -5,3 +5,4 @@ export const game = writable(new Game());
 
 export const machine = derived(game, ($game) => $game.machine);
 export const balls = derived(machine, ($machine) => $machine.balls);
+export const level = derived(game, ($game) => $game.level);

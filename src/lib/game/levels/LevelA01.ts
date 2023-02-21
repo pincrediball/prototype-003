@@ -6,6 +6,7 @@ import { Level } from '../Level';
 export class LevelA01 extends Level {
   width = 400;
   height = 600;
+  title = 'Level A01: Introducing Pincrediball';
 
   constructor() {
     super('A01', [new BumperCircle(), new BumperCircle(), new BumperCircle()]);

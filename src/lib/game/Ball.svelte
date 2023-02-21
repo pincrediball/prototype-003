@@ -8,6 +8,6 @@
   `;
 </script>
 
-<div class="absolute w-[20px] h-[20px]" {style}>
+<div class="absolute w-[20px]" {style}>
   <img src={ball.asset.url} alt="ball" />
 </div>
