@@ -1,8 +1,8 @@
 <script lang="ts">
-  export let href: string;
+  export let clazz = '';
 </script>
 
-<a {href} class="flex group font-bold text-xl w-full text-center">
+<button on:click class={`inline-flex group font-bold text-xl ${clazz}`}>
   <img
     class="invisible group-hover:visible group-hover:animate-spin inline-block w-8 m-2"
     src="/favicon.png"
@@ -23,4 +23,4 @@
     src="/favicon.png"
     alt="Spinning Pincrediball logo"
   />
-</a>
+</button>
