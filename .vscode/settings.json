@@ -1,9 +1,0 @@
-{
-  "files.exclude": {
-    "**/.svelte-kit": true,
-    "**/node_modules": true,
-    "docs/": true
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true
-}
