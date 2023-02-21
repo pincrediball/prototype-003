@@ -17,17 +17,19 @@
   }
 </script>
 
-<div class="grid grid-cols-3 m-4">
+<div class="grid grid-cols-[1fr_min-content_1fr] m-4">
   <div class="flex flex-col gap-2">
     <LevelHeader />
     <LevelToolbox />
     <GameButton clazz="w-full">ℹ Buy a hint</GameButton>
     <AnchorButton href="/menu">↗ Exit level</AnchorButton>
   </div>
-  <Machine />
+  <div class="shrink">
+    <Machine />
+  </div>
   <div class="flex flex-col gap-4">
     <Playbook />
-    <div class="text-xl p-2 bg-neutral-600 my-8">
+    <div class="text-xl px-4 py-2 bg-neutral-600 my-8">
       <p>1200 points = 🥉 bronze!</p>
       <p>2400 points = 🥈 silver!</p>
       <p>3500 points = 🥇 gold!</p>

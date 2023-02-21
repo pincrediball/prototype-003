@@ -2,22 +2,22 @@
   <button
     class="
   py-2 px-4
-  bg-pink-500 border-2 border-black/80 shadow-firm
-  hover:bg-pink-700 hover:border-black
+  bg-red-700 border border-red-800 shadow-firm
+  hover:bg-red-500 hover:border-red-900
 ">🔄 Reset</button
   >
   <button
     class="
   py-2 px-4
-  bg-green-600 border-2 border-black/80 shadow-firm
-  hover:bg-green-700 hover:border-black
+  bg-green-700 border border-green-800 shadow-firm
+  hover:bg-green-500 hover:border-green-900
 ">▶ Play</button
   >
   <button
     class="
   py-2 px-4
-  bg-purple-500 border-2 border-black/80 shadow-firm
-  hover:bg-purple-700 hover:border-black
+  bg-purple-700 border border-purple-800 shadow-firm
+  hover:bg-purple-500 hover:border-purple-900
 ">⏩ Skip</button
   >
 </div>
