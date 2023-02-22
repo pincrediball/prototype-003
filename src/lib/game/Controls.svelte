@@ -1,5 +1,23 @@
+<script lang="ts">
+  import { game } from '$lib/state/stores';
+  import { onDestroy } from 'svelte';
+
+  function run() {
+    $game.run();
+  }
+
+  function stop() {
+    $game.reset();
+  }
+
+  onDestroy(() => {
+    $game.stop();
+  });
+</script>
+
 <div class="grid grid-cols-3 gap-2">
   <button
+    on:click={stop}
     class="
   py-2 px-4
   bg-red-700 border border-red-800 shadow-firm
@@ -7,6 +25,7 @@
 ">🔄 Reset</button
   >
   <button
+    on:click={run}
     class="
   py-2 px-4
   bg-green-700 border border-green-800 shadow-firm

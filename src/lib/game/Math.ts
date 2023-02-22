@@ -3,7 +3,7 @@ export interface XYData {
   y: number;
 }
 
-export class XYTuple {
+export class XYTuple implements XYData {
   x = 0;
   y = 0;
 
@@ -12,14 +12,14 @@ export class XYTuple {
     this.y = y;
   }
 
-  multiply(vector: Vector) {
+  multiply(vector: XYData) {
     this.x = Math.trunc(this.x * vector.x);
     this.y = Math.trunc(this.y * vector.y);
   }
 
-  add(tuple: XYTuple) {
-    this.x = Math.trunc(this.x * tuple.x);
-    this.y = Math.trunc(this.y * tuple.y);
+  add(tuple: XYData) {
+    this.x = Math.trunc(this.x + tuple.x);
+    this.y = Math.trunc(this.y + tuple.y);
   }
 }
 
