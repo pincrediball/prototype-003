@@ -7,7 +7,7 @@ export class Game {
   machine: Machine = new Machine();
 
   private ticker?: number;
-  private t = 0;
+  t = 0;
 
   start(level: Level) {
     this.level = level;
